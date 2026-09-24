@@ -1,0 +1,6 @@
+  go build -o bin/vector_add ./cmd/vector_add
+  go build -o bin/dot_product ./cmd/dot_product
+  go build -o bin/sum_reduce ./cmd/sum_reduce
+  go build -o bin/false_sharing_adjacent ./cmd/false_sharing_adjacent
+  go build -o bin/false_sharing_padded ./cmd/false_sharing_padded
+  go build -o bin-tools/scale ./cmd/scale

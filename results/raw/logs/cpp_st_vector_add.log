@@ -1,0 +1,5 @@
+bench[vector_add]: n=4000000 reps=7 compiler=15.2.0 simd=avx2+fma threads=16
+bench[vector_add/scalar]: median=2.0874 ms min=1.9227 ms checksum=7999061.982
+bench[vector_add/autovec]: median=1.8586 ms min=1.7955 ms checksum=7999061.982
+bench[vector_add/sse2]: median=2.0448 ms min=1.7073 ms checksum=7999061.982
+bench[vector_add/avx2_fma]: median=2.0489 ms min=1.9391 ms checksum=7999061.982

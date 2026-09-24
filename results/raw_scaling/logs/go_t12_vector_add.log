@@ -1,0 +1,3 @@
+bench[vector_add]: n=4000000 reps=7 compiler=go1.27.1 os=linux/amd64 goamd64=v3 simd=none (gc compiler does not auto-vectorize) gomaxprocs=12 ncpu=12
+bench[vector_add/scalar]: median=2.6788 ms min=2.1512 ms checksum=7999061.982
+bench[vector_add/goroutines]: median=1.3472 ms min=1.1448 ms checksum=7999061.982

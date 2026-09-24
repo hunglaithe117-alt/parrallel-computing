@@ -1,0 +1,12 @@
+C invqueue-loadload
+(* herd7-style: two loads on P1 must stay ordered *)
+{ data=0; flag=0; }
+P0 | P1 ;
+data=42 ; r1=flag ;
+flag=1 [release] ; r2=data ;
+(* UNFIXED (relaxed r1): allows r1=1 /\ r2=0 (stale payload read) *)
+(* FIXED (r1=acquire, cf. Linux rmb()): r1=1 /\ r2=0 forbidden
+   per C++ memory model, NOT machine-verified (no herd7 run here) *)
+(* NOTE: x86 run is negative control only (TSO already orders load-load) *)
+(* NOTE: storebuffer + invqueue are the same MP shape; split is pedagogic
+   (store-side vs load-side view) *)

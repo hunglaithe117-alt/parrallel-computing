@@ -1,0 +1,9 @@
+bench[python]: THREADS=6 exceeds affinity (1 CPUs); clamping to 1
+bench[python]: example=dot_product n=4000000 reps=7 threads=1 affinity=1 python=3.14.7 numpy=2.5.2 numba=0.67.0 gil=on gcc=15.2.0 simd=avx2+fma
+bench[python]: multiprocessing reduction skipped: 1 CPU in affinity mask (single-thread run; use THREADS=12 with taskset -c 0-11)
+bench[dot_product/pure_python]: median=189.7794 ms min=188.2882 ms checksum=3999642.298
+bench[dot_product/numpy]: median=0.9603 ms min=0.9012 ms checksum=3999646
+bench[dot_product/numba]: median=2.1038 ms min=2.0903 ms checksum=3999642.298
+bench[dot_product/ctypes_scalar]: median=2.1523 ms min=2.1237 ms checksum=3999642.298
+bench[dot_product/ctypes_simd]: median=0.8830 ms min=0.8245 ms checksum=3999646
+bench[python]: sink=159985751.1

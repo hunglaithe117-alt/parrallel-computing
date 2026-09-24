@@ -1,0 +1,7 @@
+[rust] linux x86_64 | rustc 1.96.1 (31fca3adb 2026-06-26) | avx2=true fma=true | threads=1
+[rust] RUSTFLAGS=-C target-cpu=native
+[rust] dot_product scalar: n=4000000 median=2.4730 ms  min=2.4241 ms  checksum=4062498.628906
+[rust] dot_product autovec: n=4000000 median=2.4917 ms  min=2.4155 ms  checksum=4062498.628906
+[rust] dot_product: avx2_fma -> AVX2+FMA detected, using core::arch intrinsics
+[rust] dot_product avx2_fma: n=4000000 median=1.0304 ms  min=0.8939 ms  checksum=4062498.628906
+[rust] dot_product rayon: n=4000000 median=2.4325 ms  min=2.4120 ms  checksum=4062498.628906

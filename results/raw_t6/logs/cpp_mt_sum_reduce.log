@@ -1,0 +1,4 @@
+bench[sum_reduce]: n=4000000 reps=7 compiler=15.2.0 simd=avx2+fma threads=16
+bench[sum_reduce/scalar]: median=2.0935 ms min=2.0656 ms checksum=4000394.313
+bench[sum_reduce/autovec]: median=2.0804 ms min=2.0461 ms checksum=4000394.313
+bench[sum_reduce/avx2_fma]: median=0.3937 ms min=0.2640 ms checksum=4000391

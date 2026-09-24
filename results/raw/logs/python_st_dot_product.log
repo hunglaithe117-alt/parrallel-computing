@@ -1,0 +1,8 @@
+bench[python]: example=dot_product n=4000000 reps=7 threads=1 affinity=1 python=3.14.7 numpy=2.5.2 numba=0.67.0 gil=on gcc=15.2.0 simd=avx2+fma
+bench[python]: multiprocessing reduction skipped: 1 CPU in affinity mask (single-thread run; use THREADS=12 with taskset -c 0-11)
+bench[dot_product/pure_python]: median=187.9992 ms min=186.5320 ms checksum=3999642.298
+bench[dot_product/numpy]: median=0.8692 ms min=0.8391 ms checksum=3999646
+bench[dot_product/numba]: median=2.1542 ms min=2.1347 ms checksum=3999642.298
+bench[dot_product/ctypes_scalar]: median=2.1928 ms min=2.1561 ms checksum=3999642.298
+bench[dot_product/ctypes_simd]: median=0.9488 ms min=0.9272 ms checksum=3999646
+bench[python]: sink=159985751.1

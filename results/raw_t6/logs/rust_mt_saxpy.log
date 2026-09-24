@@ -1,0 +1,7 @@
+[rust] linux x86_64 | rustc 1.96.1 (31fca3adb 2026-06-26) | avx2=true fma=true | threads=6
+[rust] RUSTFLAGS=-C target-cpu=native
+[rust] saxpy scalar: n=4000000 median=2.0691 ms  min=1.7613 ms  checksum=15749997.953125
+[rust] saxpy autovec: n=4000000 median=1.9116 ms  min=1.6477 ms  checksum=15749997.953125
+[rust] saxpy: avx2_fma -> AVX2+FMA detected, using core::arch intrinsics
+[rust] saxpy avx2_fma: n=4000000 median=2.3174 ms  min=1.9469 ms  checksum=15749997.953125
+[rust] saxpy rayon: n=4000000 median=1.0445 ms  min=0.9925 ms  checksum=15749997.953125

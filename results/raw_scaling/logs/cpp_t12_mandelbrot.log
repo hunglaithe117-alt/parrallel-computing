@@ -1,0 +1,4 @@
+bench[mandelbrot]: n=786432 reps=7 compiler=15.2.0 simd=avx2+fma threads=16
+bench[mandelbrot/scalar]: median=116.7080 ms min=116.2742 ms checksum=49103260
+bench[mandelbrot/avx2_fma]: median=16.4597 ms min=16.4295 ms checksum=49101874
+bench[mandelbrot/openmp]: median=10.3120 ms min=10.2950 ms checksum=49101874

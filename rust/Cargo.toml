@@ -1,0 +1,16 @@
+[package]
+name = "simd-lab"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.96"
+description = "SIMD / parallel-computing learning kernels using stable core::arch intrinsics and Rayon."
+license = "MIT"
+
+[dependencies]
+rayon = "1.12"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = true

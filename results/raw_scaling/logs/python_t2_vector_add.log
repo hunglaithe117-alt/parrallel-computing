@@ -1,0 +1,8 @@
+bench[python]: example=vector_add n=4000000 reps=7 threads=2 affinity=2 python=3.14.7 numpy=2.5.2 numba=0.67.0 gil=on gcc=15.2.0 simd=avx2+fma
+bench[vector_add/pure_python]: median=149.6468 ms min=148.6518 ms checksum=8000750.509
+bench[vector_add/numpy]: median=1.8923 ms min=1.7238 ms checksum=8000750.509
+bench[vector_add/multiprocessing]: median=2.0243 ms min=1.5736 ms checksum=8000750.509
+bench[vector_add/numba]: median=1.6819 ms min=1.6128 ms checksum=8000750.509
+bench[vector_add/ctypes_scalar]: median=2.0091 ms min=1.8915 ms checksum=8000750.509
+bench[vector_add/ctypes_simd]: median=1.8640 ms min=1.7127 ms checksum=8000750.509
+bench[python]: sink=48004503.06

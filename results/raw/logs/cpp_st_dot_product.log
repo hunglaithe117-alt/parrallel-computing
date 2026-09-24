@@ -1,0 +1,4 @@
+bench[dot_product]: n=4000000 reps=7 compiler=15.2.0 simd=avx2+fma threads=16
+bench[dot_product/scalar]: median=2.1572 ms min=2.1116 ms checksum=4000317.958
+bench[dot_product/autovec]: median=2.0889 ms min=2.0811 ms checksum=4000317.958
+bench[dot_product/avx2_fma]: median=0.8273 ms min=0.8146 ms checksum=4000315

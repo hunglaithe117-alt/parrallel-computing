@@ -1,0 +1,15 @@
+BENCH,vector_add,pure_python,4000000,147.5920,8000750.509
+BENCH,vector_add,numpy,4000000,1.8955,8000750.509
+BENCH,vector_add,numba,4000000,1.7612,8000750.509
+BENCH,vector_add,ctypes_scalar,4000000,1.9097,8000750.509
+BENCH,vector_add,ctypes_simd,4000000,1.7528,8000750.509
+BENCH,dot_product,pure_python,4000000,187.9992,3999642.298
+BENCH,dot_product,numpy,4000000,0.8692,3999646
+BENCH,dot_product,numba,4000000,2.1542,3999642.298
+BENCH,dot_product,ctypes_scalar,4000000,2.1928,3999642.298
+BENCH,dot_product,ctypes_simd,4000000,0.9488,3999646
+BENCH,sum_reduce,pure_python,4000000,69.8074,4000052.316
+BENCH,sum_reduce,numpy,4000000,1.5607,4000052.316
+BENCH,sum_reduce,numba,4000000,2.0732,4000052.316
+BENCH,sum_reduce,ctypes_scalar,4000000,2.0931,4000052.316
+BENCH,sum_reduce,ctypes_simd,4000000,0.3173,4000051.5

@@ -1,0 +1,3 @@
+BENCH,mandelbrot,scalar,786432,117.1834,49103260
+BENCH,mandelbrot,avx2_fma,786432,16.6084,49101874
+BENCH,mandelbrot,openmp,786432,115.9635,49101874

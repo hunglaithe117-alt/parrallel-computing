@@ -1,0 +1,7 @@
+[package]
+name = "rust-ring"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+loom = "0.7"

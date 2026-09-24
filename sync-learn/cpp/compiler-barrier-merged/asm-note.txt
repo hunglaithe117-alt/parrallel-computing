@@ -1,0 +1,15 @@
+# asm-diff note: what -O2 emits for the spin loop (g++ 15.2, x86-64)
+#
+# BROKEN (plain bool, -DBROKEN): the load is hoisted out of the loop.
+#   cmpb  $1, flag(%rip)     # single check before the loop...
+#   andl  $300000000, %r12d  # ...counter folded to CAP; NO reload of flag
+#   => if flag==false at entry, the loop can never observe the store
+#   (demo hits CAP and prints HOISTED-at-O2). volatile would reload but
+#   is still a data race with no ordering -- the volatile myth.
+#
+# FIXED (atomic acquire + barrier()): the load stays inside the loop.
+# .L17:
+#   movzbl flag(%rip), %eax  # reloaded every iteration (acquire)
+#   testb  %al, %al
+#   je     .L20              # keep spinning until release-store visible
+# Reproduce: g++ -O2 -std=c++17 [-DBROKEN] -S demo.cpp -o - | grep -A3 flag

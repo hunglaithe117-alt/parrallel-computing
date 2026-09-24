@@ -1,0 +1,3 @@
+bench[false_sharing]: n=2000000 reps=7 compiler=15.2.0 simd=avx2+fma threads=16
+bench[false_sharing]: pool_threads=12 iters/thread=2000000 n=24000000 expected=24000000
+bench[false_sharing/false_sharing_adjacent]: median=7.2337 ms min=2.1773 ms checksum=24000000

@@ -1,0 +1,8 @@
+bench[python]: example=sum_reduce n=4000000 reps=7 threads=4 affinity=4 python=3.14.7 numpy=2.5.2 numba=0.67.0 gil=on gcc=15.2.0 simd=avx2+fma
+bench[sum_reduce/pure_python]: median=69.2974 ms min=68.7752 ms checksum=4000052.316
+bench[sum_reduce/numpy]: median=1.7466 ms min=1.6977 ms checksum=4000052.316
+bench[sum_reduce/multiprocessing]: median=1.9847 ms min=1.4624 ms checksum=4000052.316
+bench[sum_reduce/numba]: median=2.2236 ms min=2.1481 ms checksum=4000052.316
+bench[sum_reduce/ctypes_scalar]: median=2.2414 ms min=2.1123 ms checksum=4000052.316
+bench[sum_reduce/ctypes_simd]: median=0.7580 ms min=0.6539 ms checksum=4000051.5
+bench[python]: sink=192002504.7

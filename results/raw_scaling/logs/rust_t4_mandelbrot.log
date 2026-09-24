@@ -1,0 +1,7 @@
+[rust] linux x86_64 | rustc 1.96.1 (31fca3adb 2026-06-26) | avx2=true fma=true | threads=4
+[rust] RUSTFLAGS=-C target-cpu=native
+[rust] mandelbrot scalar: n=786432 median=35.4733 ms  min=33.9631 ms  checksum=16516739.000000
+[rust] mandelbrot autovec: n=786432 median=35.4236 ms  min=35.2702 ms  checksum=16516739.000000
+[rust] mandelbrot: avx2_fma -> AVX2+FMA detected, using core::arch intrinsics
+[rust] mandelbrot avx2_fma: n=786432 median=5.3601 ms  min=5.3364 ms  checksum=16516739.000000
+[rust] mandelbrot rayon: n=786432 median=9.0507 ms  min=8.9618 ms  checksum=16516739.000000

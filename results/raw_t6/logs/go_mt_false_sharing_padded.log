@@ -1,0 +1,2 @@
+bench[false_sharing_padded]: n=2000000 reps=7 compiler=go1.27.1 os=linux/amd64 goamd64=v3 simd=none (gc compiler does not auto-vectorize) gomaxprocs=6 ncpu=6
+bench[false_sharing_padded/goroutines]: median=10.0202 ms min=9.2547 ms checksum=12000000

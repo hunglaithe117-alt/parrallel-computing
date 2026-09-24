@@ -1,0 +1,3 @@
+bench[sum_reduce]: n=4000000 reps=7 compiler=go1.27.1 os=linux/amd64 goamd64=v3 simd=none (gc compiler does not auto-vectorize) gomaxprocs=2 ncpu=2
+bench[sum_reduce/scalar]: median=2.0595 ms min=2.0298 ms checksum=4000394.313
+bench[sum_reduce/goroutines]: median=1.2493 ms min=1.0562 ms checksum=4000394.313

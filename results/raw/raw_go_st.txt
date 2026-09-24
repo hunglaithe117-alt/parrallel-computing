@@ -1,0 +1,8 @@
+BENCH,vector_add,scalar,4000000,1.9995,7999061.982
+BENCH,vector_add,goroutines,4000000,2.1683,7999061.982
+BENCH,dot_product,scalar,4000000,3.9870,4000317.958
+BENCH,dot_product,goroutines,4000000,4.0004,4000317.958
+BENCH,sum_reduce,scalar,4000000,2.0819,4000394.313
+BENCH,sum_reduce,goroutines,4000000,2.0721,4000394.313
+BENCH,false_sharing_adjacent,goroutines,2000000,8.9074,2000000
+BENCH,false_sharing_padded,goroutines,2000000,8.9967,2000000

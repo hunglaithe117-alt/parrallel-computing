@@ -1,0 +1,8 @@
+bench[python]: example=dot_product n=4000000 reps=7 threads=12 affinity=12 python=3.14.7 numpy=2.5.2 numba=0.67.0 gil=on gcc=15.2.0 simd=avx2+fma
+bench[dot_product/pure_python]: median=186.9802 ms min=184.8921 ms checksum=3999642.298
+bench[dot_product/numpy]: median=0.8750 ms min=0.8545 ms checksum=3999646
+bench[dot_product/multiprocessing]: median=0.7422 ms min=0.6105 ms checksum=3999641.844
+bench[dot_product/numba]: median=2.1307 ms min=2.1022 ms checksum=3999642.298
+bench[dot_product/ctypes_scalar]: median=2.1594 ms min=2.1134 ms checksum=3999642.298
+bench[dot_product/ctypes_simd]: median=0.9502 ms min=0.8660 ms checksum=3999646
+bench[python]: sink=191982885.9

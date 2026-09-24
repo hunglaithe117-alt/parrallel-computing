@@ -1,0 +1,28 @@
+# Build artifacts
+*.o
+*.obj
+*.out
+*.exe
+*.so
+*.dylib
+*.a
+
+# Rust
+target/
+
+# Go
+/bin/
+*.test
+
+# C/C++ ignore the checked-in binaries if any slip in
+cpp/**/bench_*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.DS_Store

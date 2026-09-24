@@ -1,0 +1,4 @@
+bench[saxpy]: n=4000000 reps=7 compiler=15.2.0 simd=avx2+fma threads=16
+bench[saxpy/scalar]: median=1.7852 ms min=1.6485 ms checksum=6799107.552
+bench[saxpy/autovec]: median=1.6477 ms min=1.3156 ms checksum=6799107.544
+bench[saxpy/avx2_fma]: median=1.2999 ms min=1.2817 ms checksum=6799107.544
